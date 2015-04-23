@@ -7,5 +7,4 @@ var server = http.createServer(function (request, response) {
   response.end('Hello World\n')
 })
 
-server.listen(80)
-console.log('Server listening on port 80')
+server.listen(process.env.port || 5000)
